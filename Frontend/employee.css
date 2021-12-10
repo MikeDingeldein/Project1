@@ -1,0 +1,66 @@
+html {
+    background: cornsilk;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+
+table {
+    width: 100%;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 0.2fr 1.8fr 0.2fr;
+    grid-template-rows: 0.1fr .1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "nav nav nav"
+      "left-of-form submit-reimbursement right-of-form"
+      "table table table";
+  }
+  
+  .nav { grid-area: nav; 
+    text-align: center;
+}
+  
+  .table { grid-area: table; 
+    background-color: rgb(125, 126, 143);
+}
+  
+  .submit-reimbursement { grid-area: submit-reimbursement; 
+    padding: 10px;
+    text-align: center;
+}
+  
+  .left { grid-area: left; }
+  
+  .right { grid-area: right; }
+  
+
+th {
+    background-color: coral;
+    font-variant-caps: small-caps;
+
+}
+
+#reimbursement-submit-form p {
+    display: block;
+    margin-top: 4rem;
+}
+
+
+
+
+

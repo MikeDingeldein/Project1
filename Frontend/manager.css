@@ -1,0 +1,30 @@
+html {
+    background: cornsilk;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+table {
+    width: 100%;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+th {
+    background-color: coral;
+    font-variant-caps: small-caps;
+}
+
+nav {
+    padding: 1rem;
+    text-align: center;
+}

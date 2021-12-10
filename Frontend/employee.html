@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="employee.css">
+</head>
+<body>
+    <div id="receipt-image-modal" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+    <div class="container">
+        <div class="nav">
+            <div id="employee-homepage-grid-container">
+                <nav>    
+                    <h1 id="title">
+                         Veiw and Add Reimbursement Menu
+                    </h1>
+                    <button id="logout">Logout</button>
+                </nav>
+        </div>
+    </div>
+        <div class="table">
+
+            <div id=reimbursements>
+                <h2>Reimbursements</h2>
+                <table id="reimbursement-table">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Amount</th>
+                            <th>Time Submitted</th>
+                            <th>Time Resolved</th>
+                            <th>Status</th>
+                            <th>Type</th>
+                            <th>Description</th>
+                            <th>Receipt File</th>
+                            <th>Employee</th>
+                            <th>Approver</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+        
+                    </tbody>
+                </table>
+        
+        
+            </div>
+
+        </div>
+
+        <div class="submit-reimbursement">
+<div class="left-of-form"></div>
+            <div id="reimbursement-submit-form">
+                <h2>Add Reimbursement</h2>
+                <form action=""></form>
+                <h3>Reimbursement Amount</h3>
+                <input type="text" id="reimbursmentAmount" step="0.01" name="reimbursmentAmount" placeholder="Reimbursment Amount">
+                <h3>Reimbursement Type</h3>
+                <input type="text" id="reimbursmentType" step="0.01" name="reimbursmentType" placeholder="Reimbursment Type">
+                <h3>Reimbursement Description</h3>
+                <input type="text" id="reimbursmentDescription" step="0.01" name="reimbursmentDescription" placeholder="Description">
+                <h3>Reimbursement Receipt</h3>
+                <h4 class="is-size-7" >Must be JPEG, GIF, or PNG</h4>
+                <input type="file" id="reimbursmentReciept" step="0.01" name="reimbursmentReciept" placeholder="Upload File">
+                <div>
+                 <button id="reimbursement-submit-btn" type="submit">Add Reimbusement</button>
+                 </div>
+            </div>
+<div class="right-of-form"></div>
+        </div>
+        
+        
+      </div>
+
+
+
+
+
+   </div>
+ <!--<button type="submit">View Reimbursements</button>-->   
+ <script src="employee.js"></script>
+</body>
+</html>
